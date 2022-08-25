@@ -1,0 +1,242 @@
+html{
+  scroll-behavior: smooth !important;
+}
+.App {
+  text-align: center;
+}
+:root {
+  --PrimaryBlue: #BCCBEF;
+  --SecondaryBlue: #0563bb;
+  --BackgroundBlue: #F4F8FC;
+}
+/* General */
+.hrLine{
+  width: 20%;
+  height:2px;
+  background-color: var(--SecondaryBlue);
+  margin-top: -0.5rem;
+}
+.icons{
+  font-size: 1.9rem;
+  margin-left: 1rem;
+}
+.titleSection{
+  font-weight: bold;
+  text-transform: none;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+.navBar{
+  background-color:  var(--PrimaryBlue) !important;
+}
+.anchor{
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -78px;
+}
+.menuButton{
+  text-transform: none;
+  color: black !important;
+}
+/* Home page */
+.homeContainer{
+  background-color: #e9e9e9be;
+}
+.nameTitle{
+  color: #45505b;
+  font-family: Raleway !important;
+}
+.Typewriter{
+  color: var(--SecondaryBlue);
+  font-family: Raleway !important;
+  font-size: 2.5rem;
+}
+.imageContainer{
+  z-index: -1;
+}
+.imageCard {
+  width: 300;
+  margin: auto
+}
+.imageCardMedia {
+  height: 100%;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+/* About page */
+.aboutImage{
+  max-height: 500px;
+  max-width: 550px;
+}
+.aboutUL{
+  height: 12rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+.aboutLi{
+  padding: 1rem;
+}
+.aboutLi::marker {
+  content: '>';
+  font-size: 1.2em;
+  color: var(--SecondaryBlue);
+  font-weight: bold;
+}
+
+/* Skills page */
+.skillsContainer{
+  background-color: var(--BackgroundBlue);
+}
+.skillsUl{
+  list-style-type: none;
+  height: 15rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+.skillsLi{
+  padding: 0.7rem;
+}
+.skillsBar{
+  height: 10px !important;
+}
+.projectImg{
+  height: 50px;
+}
+
+/* projects */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.SwiperContainer{
+  margin-bottom: 10rem !important;
+}
+
+/* cv */
+.cvContent{
+  border-left: 2px solid black
+}
+.cvPeriod{
+  background-color: #E4ECF8;
+  width: 10rem; height: 2rem;
+  text-align: center;
+}
+.cvTechnieken{
+  margin-left: 3rem !important;
+}
+.cvTechniekBox{
+  background-color: #E4ECF8;
+  width: 10rem; height: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem !important;
+  border-radius: 1rem;
+}
+
+
+/* footer */
+.footer{
+  background-color: var(--PrimaryBlue) !important;
+}
+.footerIcons{
+  color: #6E6E6E;
+  font-size: larger;
+}
+.copyText{
+  align-self: center !important
+}
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  background: white !important;
+  color: black;
+  cursor: pointer;
+  border-radius: 75%;
+  border: 1px solid #8da9e9 ;
+  z-index: 999 !important;
+  transition: all 0.5s ease;
+
+}
+.back-to-top:hover {
+  background: var(--PrimaryBlue) !important;
+}
+
+/* contact  */
+.maps{
+  width:100% ;
+  height:20rem ;
+  border:0;
+}
+.contactContainer{
+  display: flex !important;
+  justify-content:center !important;
+  align-items: center !important;
+}
+.contactPage{
+  background-color: var(--BackgroundBlue) !important;
+}
+
+.submit {
+  width: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: var(--SecondaryBlue) !important;
+}
+.reCaptcha{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 1rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  .skillsContainer, .aboutImageContainer, .aboutListContainer{
+    margin-top: 1.5rem !important;
+  }
+  .hrLine{
+    width: 80% !important;
+  }
+  .aboutImage{
+    max-height: 200px !important;
+    max-width: 250px !important;
+  }
+  .skillsUl, .aboutUL{
+    flex-flow: column !important;
+    height: 11rem !important;
+  }
+  .aboutUl{
+    margin-bottom: 2rem !important;
+  }
+  .skillsLi, .aboutLi{
+    padding: 0.3rem !important;
+  }
+  .skillsContainer{
+    height: 90vh !important;
+  }
+  .skillsListContainer{
+    margin-top: -13rem !important;
+    margin-left: 1.5rem !important;  
+  }
+  .swiper {
+    width: 20rem !important;
+    height: 100%;
+    margin-left: 1rem !important;
+  }
+  .werkervaringGrid{
+    margin: 1.5rem !important;
+  }
+  .contactInfo{
+    margin-left: 2.5rem !important;
+  }
+  .mobileText{
+    margin-left: 1rem !important;
+  }
+}
+
+
